@@ -1,0 +1,82 @@
+Assign1: Due 11:59PM February 15
+
+In this assignment we'll use test first development to create the program we discussed 
+in homework 1.
+
+Follow test first coding, don't write any code unless a failing test demands it. Write minimum 
+code to make tests pass. Start early and take very small steps. Ask for frequent reviews. 
+You can ask for your first review as soon as you write the canary test.
+
+Keep your tests passing at all times. Keep the design lightweight and the code quality high.
+
+After the implementation is complete (and only after it's complete), in this file, compare 
+the design created in Assign1 with the design described in Homework 1.
+
+Language used: Java
+
+Libraries used for GUI: Java Fx
+
+
+We created the game using two classes: MinesweeperGrid and MinesweeperGUI. 
+
+Design comparision:
+
+The design elaborated in homework1 has a total of five classes and one interface, while the evolution of design through test driven development in assignment1 resulted in just two classes without having to compromizing in the strong object oriented principles. The design in homework1 clearly separates the implementation from the interface. 
+
+In homework1 design, the Cell class has a dependency on the JButton making it very restricted as well as complex to manage, while the assignment1 design manages the cell in a very lightweight manner by storing only the mine locations in a 2D array and removing the inheritance of AdjacentCell and MineCell, thereby making the design very easy and less complex to use.
+
+The assignment1 design provides independent methods to implement relatively complex task such as populating the grid. While the homework1 design did not provide such robust methods.
+
+Finally the homework1 design has lot of unnecessary classes and interfaces. The current design strictly follows YAGNI which restricts use of unnecessary classes.
+
+Assignment 1 Grading.
+
+Program works and able to play the game [20pts]: 
+
+All tests pass [20 pts]: 
+
+Test quality [15 pts]: 
+
+Code quality [10 pts]: 
+
+Test for random mine placement [5pts]: -5
+Replace your placeMines with
+static int index;
+	public boolean placeMines()
+	{
+
+    index++;
+    for (int i = 0; i < 10; i++) {
+      setMineAt(i, index);
+    }
+    
+		return true;
+	}
+
+and the test still passed, did not need as much code as you had to make
+the test pass.
+
+Test coverage [10 pts]: -1
+
+Overall quality [10 pts]: 
+Design quality, organization, etc.
+
+Comparison of design with HW1 [10 pts]: 
+
+Total [100pts]: 94
+
+----
+On Feb 20, 2013, at 6:24 PM, Viswanathan Ranganathan <vranganathan2@uh.edu> wrote:
+
+Hi Venkat,
+
+We did not expect that, running our minesweeper on a Mac does not display text on button when the button is disabled. We ran and checked out our project in windows and it worked like magic. We did not check how it ran on Mac. I am attaching you the screenshots of our application running on both Mac and Windows.
+
+Our wild guess is that the text color is the same as the color of disabled button and that might be the reason the text is not getting displayed on Mac.
+
+We request you to run our project on windows. We are very sure everything is working fine. Hope we get back those five precious points. 
+
+Thank you.
+<Mac.png><windows.JPG>
+
+

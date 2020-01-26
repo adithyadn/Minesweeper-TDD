@@ -1,0 +1,34 @@
+Canary-done
+Expose cell by position.(Positive) - done
+Expose an exposed cell(Negative) - done
+Seal Cell by position - done
+Unseal cell by position -done
+Seal exposed cell -done
+Unseal an exposed cell - done
+Seal a Sealed cell - done
+Unseal a unsealed cell - done 
+Exposed a sealed cell - done
+Game Over - done
+Game lose condition - done
+Get cell type by position.
+Refactor the cellExposed and cellSealed into one variable (create enum) - done
+Refactored getAdjacentCount method - done
+Refactor cellstate - done
+Get Adjacent count from 1 to 8 - done
+Get Adjacent count on boundary - done
+Refactor single letter variables
+Expose a neighbouring empty cells next to an exposed empty cell. - done
+Expose neighbouring cells to an exposed Adjacent cell(Negative) - done 
+Expose adjacent cell neighbouring an exposed empty cell. - done
+Expose neighbouring empty cells after exposing an empty cell. - done
+Display on exposing Adjacent cell - done
+Display on exposing Mine Cell - done
+Display on exposing Empty cell - done
+Game win on not all mine cells sealed - done
+Game win on all mine cells sealed - done
+Game win on all non mine cells sealed - done
+Game win on not exposing all cells - done
+Game over on game win - done
+Adjacent count on exposed mine - done
+Place mines on game grid - done
+Ten mines placed on game grid - done
